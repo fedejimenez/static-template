@@ -1,0 +1,170 @@
+/* GENERICOS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#sobre-mi,
+#proyectos,
+footer {
+  padding: 5rem;
+}
+
+#sobre-mi h1,
+#proyectos h1,
+footer h1 {
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+#sobre-mi div {
+  display: flex;
+}
+
+
+/* NAVBAR */
+
+.nabvar {
+  position: sticky;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* BANNER */
+
+.jumbotron {
+  background-image: url("https://picsum.photos/800/400");
+  background-size: cover;
+  margin: 0;
+}
+
+.jumbotron .container {
+  text-align: center;
+  padding: 10rem;
+  color: white;
+}
+
+.jumbotron p {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+
+/* SOBRE MI */
+
+#sobre-mi {
+  background-color: rgb(186, 199, 236);
+}
+
+#sobre-mi p {
+  width: 60%;
+  font-size: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+#sobre-mi img {
+  min-width: 40%;
+  height: auto;
+  padding: 1rem;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  font-size: 3rem;
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(125, 177, 247);
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 2rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/*  RESPONSIVE */
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .jumbotron h1 {
+    padding: 0;
+  }
+  .jumbotron .container {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+  .jumbotron p {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-shadow: 1px 1px 5px black;
+  }
+  #sobre-mi,
+  #proyectos,
+  footer {
+    padding: 1rem;
+  }
+  #sobre-mi h1,
+  #proyectos h1,
+  footer h1 {
+    padding: 1rem;
+    margin: 0;
+  }
+  #sobre-mi div {
+    flex-direction: column;
+  }
+  #sobre-mi p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  #sobre-mi img {
+    width: 100%;
+    text-align: center;
+  }
+  footer a {
+    font-size: 1.5rem;
+  }
+  footer ul li {
+    padding: 1rem;
+  }
+}
